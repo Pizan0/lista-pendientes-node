@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lista de Pendientes</title>
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
+
+</head>
+
+<body class="has-background-light">
+
+    <section class="section">
+        <div class="container" style="max-width:500px;">
+
+            <div class="box">
+
+                <h2 class="title is-4">Lista de Pendientes</h2>
+
+                <div class="field has-addons">
+                    <div class="control is-expanded">
+                        <input type="text" id="input-box" class="input" placeholder="Escribe una tarea...">
+                    </div>
+                    <div class="control">
+                        <button id="btn-agregar" class="button is-primary">Agregar</button>
+                    </div>
+                </div>
+
+                <h3 class="title is-6">Pendientes</h3>
+                <ul id="pendientes" class="mb-3"></ul>
+
+                <button id="btn-mover" class="button is-primary is-small">Marcar como completado</button>
+
+                <h3 class="title is-6 mt-4">Realizadas</h3>
+                <ul id="realizadas" class="mb-3"></ul>
+
+                <button id="btn-remover" class="button is-danger is-small">Borrar tareas realizadas</button>
+
+            </div>
+        </div>
+    </section>
+
+    <script src="pendiente.js"></script>
+
+</body>
+
+</html>
